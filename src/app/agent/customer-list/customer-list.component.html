@@ -1,0 +1,35 @@
+<div class="container-fluid" id="tb">
+    <h3 class="text-center">List of Customers</h3>
+    <br>
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">S.No</th>
+
+                <th scope="col">Title</th>
+
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let data of myData ;let i=index">
+            <tr>
+                <td>{{i+1 }}</td>
+
+                <td>{{data.title}}</td>
+                <td>{{data.firstname}}</td>
+                <td>{{data.lastname}}</td>
+                <td>{{data.phone}}</td>
+                <td>{{data.email}}</td>
+                <td>
+                    <!-- <button type="submit" class="btn btn-secondary" (click)="delete(data._id)">Delete</button> &nbsp; -->
+                    <button type="submit" class="btn btn-primary"><a  class="text-white" routerLink='viewUser/{{data._id}}'>View Profile</a></button>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>

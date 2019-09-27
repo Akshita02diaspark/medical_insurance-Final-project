@@ -1,0 +1,17 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+.nav-item {
+    padding: 2px;
+    margin-left: 7px;
+    color: black;
+}
+
+#nav_bar {
+    font-family: 'Gayathri', sans-serif;
+    font-size: 20px;
+    padding: 15px 70px;
+    color: rgb(241, 210, 210);
+}
+
+.pos-f-t {
+    font-family: 'Acme', sans-serif;
+}

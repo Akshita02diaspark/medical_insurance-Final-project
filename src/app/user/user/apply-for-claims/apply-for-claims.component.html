@@ -1,0 +1,53 @@
+<div class="container-fluid w-40" id="tb">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">s.no</th>
+                <th scope="col">Policy Name</th>
+                <th scope="col">Apply for Claim</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>{{policyName}}</td>
+                <td>
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                                Claim
+                               </button>
+
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <h4>Are you sure? you want to apply claim.</h4>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success" data-dismiss="modal" (click)="applyClick()">YES</button>
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">NO</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- <button class="btn btn-primary" (click)="applyClick()" [disabled]="condition">Claim</button> -->
+                </td>
+
+
+            </tr>
+
+        </tbody>
+    </table>
+
+</div>

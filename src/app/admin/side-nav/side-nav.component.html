@@ -1,0 +1,25 @@
+<div class="sidenav" [ngStyle]="{'width.px': isOpen?'250':'0'}">
+    <a href=" javascript:void(0) " class="closebtn " (click)="closeNav() ">&times;</a>
+    <br>
+    <hr>
+    <div id="abc ">
+
+
+        <!-- <a routerLink="/home" (click)='closeNav()'>Home</a><br> -->
+        <!-- <hr> -->
+        <a routerLink="/admin/customer-list" (click)='closeNav()'>View Customer</a><br></div>
+    <hr>
+
+    <a routerLink="/admin/view-agent" (click)='closeNav()'>Approved Users</a><br>
+    <hr>
+
+    <a routerLink="/admin/approved-policy" (click)='closeNav()'>Claim Appliers</a><br>
+    <hr>
+
+    <a routerLink="/admin/agent-registration" (click)='closeNav()'>Agent Registration</a>
+    <hr>
+
+</div>
+
+
+<span style="font-size:30px;cursor:pointer " (click)="openNav() ">&#9776; </span>
